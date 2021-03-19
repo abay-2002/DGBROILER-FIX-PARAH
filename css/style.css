@@ -1,0 +1,97 @@
+* {
+	margin:0;
+	padding: 0;
+	font-family: 'Nunito', sans-serif;
+	scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,.05); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e30505 !important; /*iconic red*/
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e30505 !important; /*iconic red*/
+}
+
+
+/*mainnav*/
+.costumMainNav {
+	background-color: #e30505 !important; /*iconic red*/
+	box-shadow: none !important;
+	font-weight: bold;
+}
+
+.costumMainNav .nav-wrapper .brand-logo img{
+	margin-top: 8px;
+	width: 100px;
+}
+/*penutup mainnav*/
+/*dropdown mainnav*/
+#dropdown1 .app-bg {
+	margin-top: 100px;
+	background-color: green;
+}
+
+.costumDropDown li a{
+	color: rgba(0,0,0,.87);
+	font-weight: bold;
+}
+/*penutup dropdown mainnav*/
+
+/*slider main*/
+.slider .slidesSatu li .caption h3 {
+	margin-top: 18vh;
+	font-weight: bold;
+	font-size: 9vh;
+}
+/*penutup slider main*/
+
+/*slider pesan*/
+.sliderPesanWrapper {
+	margin: 100px auto;
+}
+
+.sliderPesanWrapper .sliderDua .slidesDua {
+	background-color:transparent;
+}
+
+.sliderPesanWrapper .sliderDua .slidesDua li {
+	text-align: center;
+}
+
+.sliderPesanWrapper .sliderDua .slidesDua li .tambah {
+	margin-top: 300px;
+}
+
+.sliderPesanWrapper .sliderDua .slidesDua li .tambah .material-icons {
+	background-color: #5cdb5c;
+}
+
+.sliderDua .indicators .indicator-item.active {
+	background-color:  #e30505 !important; /*iconic red*/
+}
+
+/*pesan dialog box*/
+.pesanDialogBox {
+	background-color: salmon;
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	z-index: 999;
+}
+
+
+/*penutup slider pesan*/
+

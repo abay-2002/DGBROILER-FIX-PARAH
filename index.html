@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!-- mycss -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <!-- JQUERY CDN -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+
+    <body>
+      <!-- mainnav -->
+      <div class="navbar-fixed">
+        <nav class="costumMainNav">
+            <div class="container">
+              <div class="nav-wrapper">
+                <a href="#" class="brand-logo"><img src="img/logo/Dgbroilerlogo100x50.png"></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a href="sass.html">Tentang Kami</a></li>
+                  <li><a href="badges.html">Produk</a></li>
+                  <li><a href="badges.html">Pesan Spesial</a></li>
+                  <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Sosial Media<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+              </div>
+            </div><!-- container -->
+          </nav>
+        </div>
+        <!-- penutup mainnav -->
+        <!-- Dropdown StructureNav -->
+        <ul id="dropdown1" class="dropdown-content costumDropDown">
+          <li><a href="#!">one</a></li>
+          <li><a href="#!">two</a></li>
+          <li><a href="#!">three</a></li>
+        </ul>
+        <!-- penutup dropdown structureNav -->
+        <!-- sidenav -->
+        <ul class="sidenav" id="mobile-demo">
+          <li><a href="sass.html">Tentang Kami</a></li>
+          <li><a href="badges.html">Produk</a></li>
+          <li><a href="collapsible.html">Pesan Spesial</a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Sosial Media<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+        <!-- penutup sidenav -->
+        <!-- Dropdown StructureNav Sidenav-->
+        <ul id="dropdown2" class="dropdown-content costumDropDownSideNav">
+          <li><a href="#!">one</a></li>
+          <li><a href="#!">two</a></li>
+          <li><a href="#!">three</a></li>
+        </ul>
+        <!-- penutup dropdown structureNav Sidenav-->
+
+      <!-- slider -->
+      <div class="slider costumSlide">
+        <ul class="slides slidesSatu">
+          <li>
+            <img src="img/imgSlider/chicken-first.jpg"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>This is our big Tagline!</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/imgSlider/chicken-second.jpg"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>Left Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/imgSlider/chicken-third.jpg"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>Right Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- penutup slider -->
+
+        <!-- slider pesan -->
+        <div class="container sliderPesanWrapper">
+          <div class="container">
+              <div class="slider sliderDua">
+                  <ul class="slides slidesDua">
+                      <li>
+                          <img src="img/imgSliderPesan/raw-chick-first.png" title="raw chicken"> <!-- random image -->
+                          <div class="caption right-align tambah">
+                              <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+                          </div>
+                      </li>
+                      <li>
+                          <img src="img/imgSliderPesan/raw-chick-second.png" title="raw chicken"> <!-- random image -->
+                          <div class="caption right-align tambah">
+                              <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+                          </div>
+                      </li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+
+<!--           <div class="pesanDialogBox">
+            
+          </div> -->
+        <!-- penutup slider pesan -->
+
+      <!-- JAVASCRIPT -->
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <!-- vanilla javascript -->
+      <script src="js/script.js"></script>
+      <!-- javasript CDN -->
+      <script>
+        // slide main
+        $(document).ready(function(){
+          $('.slider').slider({
+              height:635,
+              indicators:false,
+              duration: 250,
+              interval: 6000
+            });
+          // pesan slider
+          $('.sliderDua').slider({
+              height:460,
+              indicators:true,
+              duration: 250,
+              interval: 6000
+            });
+          $(".dropdown-trigger").dropdown();
+          $('.sidenav').sidenav();
+          $('.fixed-action-btn').floatingActionButton();
+        });
+      </script>
+      <!-- PENUTUP JAVASCRIPT -->
+    </body>
+  </html>
