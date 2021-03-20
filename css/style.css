@@ -85,6 +85,12 @@
 	width: 420px;
 	margin: auto;
 	/*background-color: red;*/
+	position: relative;
+}
+
+.carousel .carousel-item a {
+	margin-top: -200px;
+	position: relative;
 }
 
 /*responsive carousel*/
@@ -202,6 +208,12 @@
 		margin: auto;
 		/*background-color: red;*/
 	}
+	
+	.carousel .carousel-item a {
+		margin-top: -200px;
+		margin-left: 20px;
+		position: relative;
+	}
 }
 
 @media only screen and (max-width: 400px){
@@ -230,6 +242,12 @@
 		width: 420px;
 		margin: auto;
 		/*background-color: red;*/
+	}
+
+	.carousel .carousel-item a {
+		margin-top: -200px;
+		margin-left: 50px;
+		position: relative;
 	}
 }
 
@@ -260,6 +278,12 @@
 		margin: auto;
 		/*background-color: red;*/
 	}
+
+	.carousel .carousel-item a {
+		margin-top: -200px;
+		margin-left: 20px;
+		position: relative;
+	}
 }
 
 @media only screen and (max-width: 300px){
@@ -288,6 +312,12 @@
 		width: 300px;
 		margin: auto;
 		/*background-color: red;*/
+	}
+
+	.carousel .carousel-item a {
+		margin-top: -200px;
+		margin-left: 30px;
+		position: relative;
 	}
 }
 /*penutup carousel pesan*/
