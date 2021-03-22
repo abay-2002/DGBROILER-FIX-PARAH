@@ -93,6 +93,8 @@
 	position: relative;
 }
 
+
+
 /*responsive carousel*/
 @media only screen and (max-width: 860px){
 	/*carousel pesan*/
@@ -321,4 +323,68 @@
 	}
 }
 /*penutup carousel pesan*/
+
+/*pesan*/
+/*dialogBox Carousel*/
+#dialogBoxWrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+#dialogBoxWrapper .dialogBoxParentMuncul {
+	height: 80px;
+	background-color: salmon;
+	width: 60%;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+}
+/*penutup dialogBox carousel*/
+/*produk1*/
+#dialogBoxWrapper .dialogBoxParentMuncul .produk1TriggerWrapper {
+	width: 20px;
+	height: 20px;
+	background-color: blue;
+	margin: 5px auto;
+	display: flex;
+	flex-direction: row;
+}
+
+#dialogBoxWrapper .dialogBoxParentMuncul .produk2TriggerWrapper {
+	width: 20px;
+	height: 20px;
+	background-color: blue;
+	margin: 5px auto;
+	display: flex;
+	flex-direction: row;
+}
+
+#dialogBoxWrapper .dialogBoxParentMuncul .produk3TriggerWrapper {
+	width: 20px;
+	height: 20px;
+	background-color: blue;
+	margin: 5px auto;
+	display: flex;
+	flex-direction: row;
+}
+
+#dialogBoxWrapper #totalWrapper {
+	width: 40%;
+	height: 80px;
+	padding: 15px;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 50px; 
+	background-color: green;
+	display: flex;
+	flex-direction: column;
+}
+
+/*penutup produk1*/
+/*penutup pesan*/
+
 
