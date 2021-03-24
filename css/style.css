@@ -326,52 +326,59 @@
 
 /*pesan*/
 /*dialogBox Carousel*/
-#dialogBoxWrapper {
-	display: flex;
-	flex-direction: column;
-}
-
+/*.dialogBoxParentMuncul*/
 #dialogBoxWrapper .dialogBoxParentMuncul {
-	height: 80px;
+	height: 100px;
+	padding: 10px;
 	background-color: salmon;
-	width: 60%;
+	width: 40%;
 	position: fixed;
 	bottom: 0;
 	right: 0;
 	display: flex;
 	flex-direction: column;
 }
-/*penutup dialogBox carousel*/
-/*produk1*/
-#dialogBoxWrapper .dialogBoxParentMuncul .produk1TriggerWrapper {
-	width: 20px;
+
+#dialogBoxWrapper .dialogBoxParentMuncul #produk1TriggerWrapper {
+	/*width: 20px;*/
+	height: 20px;
+	background-color: yellow;
+	margin: 5px auto;
+	display: flex;
+	flex-direction: row;
+}
+
+#dialogBoxWrapper .dialogBoxParentMuncul #produk2TriggerWrapper {
+	/*width: 20px;*/
+	height: 20px;
+	background-color: lightgreen;
+	margin: 5px auto;
+	display: flex;
+	flex-direction: row;
+}
+
+#dialogBoxWrapper .dialogBoxParentMuncul #produk3TriggerWrapper {
+	/*width: 20px;*/
 	height: 20px;
 	background-color: blue;
 	margin: 5px auto;
 	display: flex;
 	flex-direction: row;
 }
-
-#dialogBoxWrapper .dialogBoxParentMuncul .produk2TriggerWrapper {
-	width: 20px;
-	height: 20px;
-	background-color: blue;
-	margin: 5px auto;
-	display: flex;
-	flex-direction: row;
+/*penutup .dialogBoxParentMuncul*/
+/*bayar*/
+#dialogBoxWrapper #bayar {
+	position: fixed;
+	bottom: 0;
+	background-color: red;
+	height: 80px;
+	width: 30%;
+	left: 30%;
 }
-
-#dialogBoxWrapper .dialogBoxParentMuncul .produk3TriggerWrapper {
-	width: 20px;
-	height: 20px;
-	background-color: blue;
-	margin: 5px auto;
-	display: flex;
-	flex-direction: row;
-}
-
+/*penutup*/
+/*totalwrapper*/
 #dialogBoxWrapper #totalWrapper {
-	width: 40%;
+	width: 30%;
 	height: 80px;
 	padding: 15px;
 	text-align: center;
@@ -383,8 +390,10 @@
 	display: flex;
 	flex-direction: column;
 }
+/*penutup totalwrapper*/
 
-/*penutup produk1*/
+
 /*penutup pesan*/
+/*penutup dialogBox carousel*/
 
 
