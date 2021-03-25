@@ -1,39 +1,37 @@
 // idenya adalah ketika user meng click button maka akan muncul sebuah dialog box, beberapa button yang apa bila diklik menghasilkan dialog box yang sama
 
-
-
-// TOMBOL MEMUNCULKAN dialogbox
-
-// ambil parentnya dialogBoxWrapper akan appendChild
-let wrapper = document.getElementById('dialogBoxWrapper'); 
-// elh div boxparent
+// dialogboxwrapper
+let wrapper = document.getElementById('dialogBoxWrapper');
+// elh wrapper -> divboxparentmuncul
 let elhDivBoxParent = document.createElement('div'); 
-elhDivBoxParent.setAttribute('class', 'dialogBoxParentMuncul');
+elhDivBoxParent.setAttribute('class', 'dialogBoxParentMuncul'); 
 
-// elhTotal div id totalWrapper
-let divTotalParent = document.createElement('div');
-divTotalParent.setAttribute('id','totalWrapper');
+// totalWrapper
+let elhDivTotalWrapper = document.createElement('div');
+elhDivTotalWrapper.setAttribute('id','totalWrapper');
+let elhTotal = document.createElement('p');
+elhTotal.setAttribute('id','totalHarga');
+elhDivTotalWrapper.appendChild(elhTotal);
 
-// elhBayar div id bayar
-let elhBayar = document.createElement('div');
-elhBayar.setAttribute('id','bayar');
+// divIdBayar
+let elhDivBayar = document.createElement('div');
+elhDivBayar.setAttribute('id','bayar');
+let elhPDivBayar = document.createElement('p');
+elhDivBayar.appendChild(elhPDivBayar);
 
+// totalHarga dan tombol trigger, ditulis dibawah supaya proses penambahan produk dilakukan terlebih dahulu lalu komputer baru akan membaca totalHarga dan tombol trigger karena bahkan sebelum tombol trigger diklik komputer sudah membaca sebuah event yaitu event yang diberikan dari produk1Trigger produk2Trigger dan produk3Trigger
 
-let tombol = document.querySelectorAll('.tombol');
-for(i=0; i<tombol.length; i++){
-	tombol[i].addEventListener('click',function(){
-		// dialogBox.classList.toggle('dialogBoxParentMuncul');
-		wrapper.appendChild(elhDivBoxParent);
-		wrapper.appendChild(divTotalParent);
-		wrapper.appendChild(elhBayar);
-	});
-}
-
-// karena variable hargaproduk bersifat variablescope maka apabila misal kita klik pada produk2 dia akan menambah 20000 lalu ditaruh hargaproduk menjadi 20000 lalu apabila kita mengklik harga produk3 maka hargaproduk3 akan tertimpa dengan hargaproduk2 yang diinputkan sebelumnya oleh karea itu kita perlu mendefinisikan masing-mmasing harganya
+// TIDAK UNTUK DITIRU PENULISAN KODE INI KURANG RAPIH :)
 
 
-// harga produk1
-let hargaProduk1 = 0;
+// biatkan dia menjadi global variable
+
+
+
+// quantityProduk1 
+let quantityProduk1 = 0;
+// hargaProduk1 
+let hargaproduk1 = 0;
 // elhDivProduk1produk1TriggerWrapper
 let produk1Trigger = document.createElement('div');
 produk1Trigger.setAttribute('id','produk1TriggerWrapper');
@@ -41,12 +39,29 @@ produk1Trigger.setAttribute('id','produk1TriggerWrapper');
 let tProduk1 = document.getElementById('produk1');
 tProduk1.addEventListener('click',function(){
 	elhDivBoxParent.appendChild(produk1Trigger);
-	hargaProduk1 += 10000;
-	produk1Trigger.innerHTML = 'Ayam utuh Rp'+ hargaProduk1.toString();
+	quantityProduk1 += 1;
+	hargaproduk1 += 10000;
+	produk1Trigger.innerHTML = 'Ayam utuh Rp.'+ hargaproduk1.toString()+' '+quantityProduk1+' item';
 });
 
 
+	let removeProduk1 = document.getElementById('produk1Remove');
+	removeProduk1.addEventListener('click',function(){
+		if((quantityProduk1 >= 1)&&(hargaproduk1 >= 10000)){
+		quantityProduk1 -= 1;
+		hargaproduk1 -= 10000;
+		produk1Trigger.innerHTML = 'Ayam utuh Rp.'+ hargaproduk1.toString()+' '+quantityProduk1+' item';
+		totalHarga -= 10000;
+		elhTotal.innerHTML = 'Total Belanja: Rp.'+totalHarga;
+		}
+		else {
+			elhDivBoxParent.removeChild(produk1Trigger);
+		}
+	});
 
+
+// quantityProduk2
+let quantityProduk2 = 0;
 // harga produk2
 let hargaProduk2 = 0;
 // elhDivProduk2produk2TriggerWrapper
@@ -56,12 +71,29 @@ produk2Trigger.setAttribute('id','produk2TriggerWrapper');
 let tProduk2 = document.getElementById('produk2');
 tProduk2.addEventListener('click',function(){
 	elhDivBoxParent.appendChild(produk2Trigger);
-	hargaProduk2 += 15000;
-	produk2Trigger.innerHTML = 'Paha ayam Rp'+ hargaProduk2.toString();
+	quantityProduk2 += 1;
+	hargaProduk2 += 20000;
+	produk2Trigger.innerHTML = 'Paha Ayam Rp.'+hargaProduk2.toString()+' '+quantityProduk2+' item';
 });
 
 
+	let removeProduk2 = document.getElementById('produk2Remove');
+	removeProduk2.addEventListener('click',function(){
+		if((quantityProduk2 >= 1)&&(hargaProduk2 >= 20000)){
+		quantityProduk2 -= 1;
+		hargaProduk2 -= 20000;
+		produk2Trigger.innerHTML = 'Paha Ayam Rp.'+ hargaProduk2.toString()+' '+quantityProduk2+' item';
+		totalHarga -= 20000;
+		elhTotal.innerHTML = 'Total Belanja: Rp.'+totalHarga;
+		}
+		else {
+			elhDivBoxParent.removeChild(produk2Trigger);
+		}
+	});
 
+
+// quantityProduk3
+let quantityProduk3 = 0;
 // harga produk3
 let hargaProduk3 = 0;
 // elhDivProduk3produk3TriggerWrapper
@@ -71,14 +103,46 @@ produk3Trigger.setAttribute('id','produk3TriggerWrapper');
 let tProduk3 = document.getElementById('produk3');
 tProduk3.addEventListener('click',function(){
 	elhDivBoxParent.appendChild(produk3Trigger);
-	hargaProduk3 += 20000;
-	produk3Trigger.innerHTML = 'Sayap ayam Rp'+ hargaProduk3.toString(); 
+	quantityProduk3 += 1;
+	hargaProduk3 += 30000;
+	produk3Trigger.innerHTML = 'Sayap Ayam Rp.'+hargaProduk3.toString()+' '+quantityProduk3+' item';
 });
 
-// jadi idenya adalah ketika tombol merah yaitu id='produk1' 2 3 diclick maka akan menghasilkan sebuah harga 
+
+	let removeProduk3 = document.getElementById('produk3Remove');
+	removeProduk3.addEventListener('click',function(){
+		if((quantityProduk3 >= 1)&&(hargaProduk3 >= 30000)){
+		quantityProduk3 -= 1;
+		hargaProduk3 -= 30000;
+		produk3Trigger.innerHTML = 'Paha Ayam Rp.'+ hargaProduk3.toString()+' '+quantityProduk3+' item';
+		totalHarga -= 30000;
+		elhTotal.innerHTML = 'Total Belanja: Rp.'+totalHarga;
+		}
+		else {
+			elhDivBoxParent.removeChild(produk3Trigger);
+		}
+	});
 
 
+// TOMBOL MEMUNCULKAN dialogbox
+// totalHarga
+let totalHarga = 0;
+// tombol trigger
+let tombol = document.querySelectorAll('.tombol');
+for(i=0; i<tombol.length; i++){
+	tombol[i].addEventListener('click',function(){
+		// dialogBox.classList.toggle('dialogBoxParentMuncul');
+		wrapper.appendChild(elhDivBoxParent);
+		totalHarga = hargaproduk1+hargaProduk2+hargaProduk3;
+		elhTotal.innerHTML = 'Total Belanja: Rp.'+totalHarga;
+		wrapper.appendChild(elhDivTotalWrapper);
+		wrapper.appendChild(elhDivBayar);
+	});
+}
 
+// menambahkan button untuk mengurangi harga
+// idenya adalah ketika tombol - diklik maka hargaproduk berkurang
+// idenya adalah ketika tombol dengan id produk[x]Remove diklik maka harga produk berkurang
 
 
 

@@ -93,6 +93,9 @@
 	position: relative;
 }
 
+.carousel .carousel-item .tombolRemove {
+	position: relative;
+}
 
 
 /*responsive carousel*/
@@ -328,7 +331,7 @@
 /*dialogBox Carousel*/
 /*.dialogBoxParentMuncul*/
 #dialogBoxWrapper .dialogBoxParentMuncul {
-	height: 100px;
+	/*height: 100px;*/
 	padding: 10px;
 	background-color: salmon;
 	width: 40%;
@@ -341,56 +344,66 @@
 
 #dialogBoxWrapper .dialogBoxParentMuncul #produk1TriggerWrapper {
 	/*width: 20px;*/
-	height: 20px;
+	/*height: 20px;*/
 	background-color: yellow;
 	margin: 5px auto;
 	display: flex;
 	flex-direction: row;
+	font-weight: bold;
 }
 
 #dialogBoxWrapper .dialogBoxParentMuncul #produk2TriggerWrapper {
 	/*width: 20px;*/
-	height: 20px;
+	/*height: 20px;*/
 	background-color: lightgreen;
 	margin: 5px auto;
 	display: flex;
 	flex-direction: row;
+	font-weight: bold;
 }
 
 #dialogBoxWrapper .dialogBoxParentMuncul #produk3TriggerWrapper {
 	/*width: 20px;*/
-	height: 20px;
-	background-color: blue;
+	/*height: 20px;*/
+	background-color: lightblue;
 	margin: 5px auto;
 	display: flex;
 	flex-direction: row;
+	font-weight: bold;
 }
 /*penutup .dialogBoxParentMuncul*/
+
+/*totalwrapper*/
+#dialogBoxWrapper #totalWrapper {
+	width: 30%;
+	left: 30%;
+	height: 80px;
+	padding: 15px;
+	position: fixed;
+	bottom: 0;
+	background-color: red;
+	display: flex;
+	flex-direction: column;
+}
+
+#dialogBoxWrapper #totalWrapper p {
+	font-weight: bold;
+	margin: auto;
+}
+/*penutup totalwrapper*/
+
 /*bayar*/
 #dialogBoxWrapper #bayar {
 	position: fixed;
 	bottom: 0;
-	background-color: red;
+	background-color: green;
 	height: 80px;
 	width: 30%;
-	left: 30%;
+	left: 0;
 }
 /*penutup*/
-/*totalwrapper*/
-#dialogBoxWrapper #totalWrapper {
-	width: 30%;
-	height: 80px;
-	padding: 15px;
-	text-align: center;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	height: 50px; 
-	background-color: green;
-	display: flex;
-	flex-direction: column;
-}
-/*penutup totalwrapper*/
+
+
 
 
 /*penutup pesan*/
