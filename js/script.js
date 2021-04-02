@@ -16,15 +16,15 @@ elhDivTotalWrapper.appendChild(elhTotal);
 // divIdBayar
 let elhDivBayar = document.createElement('div');
 elhDivBayar.setAttribute('id','bayar');
-let elhPDivBayar = document.createElement('p');
-elhDivBayar.appendChild(elhPDivBayar);
+let elhADivBayar = document.createElement('a');
+elhDivBayar.appendChild(elhADivBayar);
+elhADivBayar.innerHTML = 'test';
 
 // totalHarga dan tombol trigger, ditulis dibawah supaya proses penambahan produk dilakukan terlebih dahulu lalu komputer baru akan membaca totalHarga dan tombol trigger karena bahkan sebelum tombol trigger diklik komputer sudah membaca sebuah event yaitu event yang diberikan dari produk1Trigger produk2Trigger dan produk3Trigger
 
 // TIDAK UNTUK DITIRU PENULISAN KODE INI KURANG RAPIH :)
 
 
-// biatkan dia menjadi global variable
 
 
 
@@ -131,23 +131,172 @@ let totalHarga = 0;
 let tombol = document.querySelectorAll('.tombol');
 for(i=0; i<tombol.length; i++){
 	tombol[i].addEventListener('click',function(){
-		// dialogBox.classList.toggle('dialogBoxParentMuncul');
-		wrapper.appendChild(elhDivBoxParent);
-		totalHarga = hargaproduk1+hargaProduk2+hargaProduk3;
-		elhTotal.innerHTML = 'Total Belanja: Rp.'+totalHarga;
-		wrapper.appendChild(elhDivTotalWrapper);
-		wrapper.appendChild(elhDivBayar);
+		if(totalHarga >= 0){
+			// dialogBox.classList.toggle('dialogBoxParentMuncul');
+			wrapper.appendChild(elhDivBoxParent);
+			totalHarga = hargaproduk1+hargaProduk2+hargaProduk3;
+			elhTotal.innerHTML = 'Total Belanja: Rp.'+totalHarga;
+			wrapper.appendChild(elhDivTotalWrapper);
+			wrapper.appendChild(elhDivBayar);
+		}
+		else{
+			wrapper.removeChild(elhDivTotalWrapper);
+			wrapper.removeChild(elhDivBayar);
+		}
 	});
 }
+
+// form
+	// form input
+	let tagForm = document.createElement('form');
+	tagForm.setAttribute('name','produkForm');
+
+	// tagNama
+	let tagNama = document.createElement('span');
+	tagNama.innerHTML = 'Nama:'
+	let tagInputNama = document.createElement('input');
+	tagInputNama.setAttribute('type','text');
+	tagInputNama.setAttribute('required','text');
+
+	// tagAlamat
+	let tagAlamat = document.createElement('span');
+	tagAlamat.innerHTML = 'Alamat:'
+	let tagInputAlamat = document.createElement('input');
+	tagInputAlamat.setAttribute('type','text');
+	tagInputAlamat.setAttribute('required','text');
+
+	// tagWhatsApp
+	let tagWhatsApp = document.createElement('span');
+	tagWhatsApp.innerHTML = 'WhatsApp:'
+	let tagInputWhatsApp = document.createElement('input');
+	tagInputWhatsApp.setAttribute('type','text');
+	tagInputWhatsApp.setAttribute('required','text');
+
+	// form submit
+	let tagSubmit = document.createElement('a');
+	tagSubmit.innerHTML = 'Kirim';
+	
+let divPopUpConfirmWrapper = document.getElementById('popUpConfirmWrapper');
+elhADivBayar.addEventListener('click',function(){
+	let divPopUpConfirm = document.createElement('div');
+	divPopUpConfirm.setAttribute('id','popUpConfirm');
+
+	let divDialogPopUp = document.createElement('div');
+	divDialogPopUp.setAttribute('id','dialogPopUp');
+
+	divPopUpConfirmWrapper.appendChild(divPopUpConfirm);
+	divPopUpConfirm.appendChild(divDialogPopUp);
+
+	tagForm.appendChild(tagNama);
+	tagForm.appendChild(tagInputNama);
+	tagForm.appendChild(tagAlamat);
+	tagForm.appendChild(tagInputAlamat);
+	tagForm.appendChild(tagWhatsApp);
+	tagForm.appendChild(tagInputWhatsApp);
+	tagForm.appendChild(tagSubmit);
+	divDialogPopUp.appendChild(tagForm);
+});
+
+// submit
+// let valueNamaFix = tagInputNama.value;
+// let valueAlamatFix = tagInputAlamat.value;
+// let valueWhatsAppFix = tagInputWhatsApp.value;
+
+// yang terjadi adalah ambil value dari tagInputNama dengan methode .value
+// tampung value di valueInputNama
+// apabila value text dari valueInputNama lengthnya sama dengan 0
+// maka lakukan alert('masukan nilai!')
+// else nilai masuk
+tagSubmit.addEventListener('click',function(){
+	let valueInputNama = tagInputNama.value;
+	let valueInputAlamat = tagInputAlamat.value;
+	let valueInputWhatsApp = tagInputWhatsApp.value;
+	if((valueInputNama.innerText = valueInputNama.length == 0)||(valueInputAlamat.innerText = valueInputAlamat.length == 0)||(valueInputWhatsApp.innerText = valueInputWhatsApp.length == 0)){
+		alert('masukan nilai!!');
+	}else{
+		tagSubmit.setAttribute('target','blank');
+		tagSubmit.setAttribute('href','https://wa.me/6282297008375/?text=Hallo%20Akbar%20Angkasa'+' '+produk1Trigger.innerHTML+' '+produk2Trigger.innerHTML+' '+produk3Trigger.innerHTML);
+	}
+});
+
+
+// tagSubmit.addEventListener('click',function(){
+// 	let value = tagInputNama.value;
+// 	value.innerText = value.length == 0 ? alert('masukan nilai') : alert('nilai masuk');
+// });
+
+
+
+	// if((typeof valueNamaFix === 'string')&&(typeof valueAlamatFix === 'string')&&(typeof valueWhatsAppFix === 'string')){	
+	// 	alert(valueNamaFix + valueAlamatFix + valueWhatsAppFix);
+	// }else{
+	// 	alert('masukan nilai!');
+	// }
+
+
+
+
+
+// let tekan = document.getElementById('tekan');
+// tekan.addEventListener('click',function(){
+// 	let nilai = document.getElementById('inputNamaUser').value;
+// 	alert(nilai);
+// });
+
+
+// tagSubmit.addEventListener('click',function(){
+// 	tagSubmit.setAttribute('href','https://wa.me/6282297008375/?text=Hallo%20Akbar%20Angkasa' + produk1Trigger.innerHTML + ' ' + produk2Trigger.innerHTML + ' ' + produk3Trigger.innerHTML);
+// });
+
+// https://wa.me/6282297008375/?text=Hallo%20Akbar%20Angkasa
+// tombol kirim yang apabila diklik akan mengirim value produk1 produk2 produk3 dan form ke whatsapp kita akan menggunakan API Whatsapp
+
+
+
+
+
+
+
+
+
+// elhADivBayar.addEventListener('click',function(){
+// 	elhADivBayar.setAttribute('target','blank');
+// 	elhADivBayar.setAttribute('href','https://wa.me/6282297008375/?text=Hallo%20Akbar%20Angkasa'+' saya ingin pesan '+ produk1Trigger.innerHTML + ' ' + produk2Trigger.innerHTML + ' ' + produk3Trigger.innerHTML + ' Total Belanja: '+totalHarga);
+// });
+
+// popUpConfirm
+
+
+
+
+
+
+
+
+// elhADivBayar.setAttribute('href','https://wa.me/6282297008375/?text=Hallo%20Akbar%20Angkasa'+'saya ingin pesan '+hargaproduk1);
+
+
 
 // menambahkan button untuk mengurangi harga
 // idenya adalah ketika tombol - diklik maka hargaproduk berkurang
 // idenya adalah ketika tombol dengan id produk[x]Remove diklik maka harga produk berkurang
 
 
-
-
-
+// tujuaan dari mengkilik tombol bayar adalah untuk mengirim pesan dari hasil input user yaitu produk1 produk2 dan produk3
+// ada beberapa kemungkinan
+// user membeli produk1
+// user membeli produk2
+// user membeli produk3
+// user membeli produk1 dan produk2
+// user membeli produk2 dan produk1
+// user membeli produk2 dan produk3
+// user membeli produk3 dan produk2
+// user membeli produk1 dan produk3
+// user membeli produk3 dan produk1
+// user membeli produk1 2 3
+// user membeli produk2 1 3
+// user membeli produk3 2 1
+// user membeli produk3 1 2
 
 
 

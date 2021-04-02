@@ -400,8 +400,50 @@
 	height: 80px;
 	width: 30%;
 	left: 0;
+	text-align: center;
+}
+#dialogBoxWrapper #bayar a {
+	line-height: 80px;
+	font-weight: bold;
+	color: rgba(0,0,0,1);
 }
 /*penutup*/
+/*pop up confirm*/
+#popUpConfirm {
+	background-color: rgba(0,0,0,.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+}
+
+#popUpConfirm #dialogPopUp {
+	position: relative;
+	top: 25%;
+	margin: auto;
+	width: 70%;
+	height: 50%;
+	background-color: salmon;
+}
+
+#popUpConfirm #dialogPopUp #closePopUp {
+	position: absolute;
+	left: 1%;
+	color: green;
+}
+
+#popUpConfirm #dialogPopUp form {
+	width: 90%;
+	height: 90%;
+	margin: auto;
+	position: relative;
+	top: 5%;
+	background-color: red;
+}
+
+/*penutup pop up confirm*/
 
 
 
