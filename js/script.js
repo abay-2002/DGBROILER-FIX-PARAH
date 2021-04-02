@@ -215,7 +215,7 @@ tagSubmit.addEventListener('click',function(){
 		alert('masukan nilai!!');
 	}else{
 		tagSubmit.setAttribute('target','blank');
-		tagSubmit.setAttribute('href','https://wa.me/6282297008375/?text=Hallo%20Akbar%20Angkasa'+' '+produk1Trigger.innerHTML+' '+produk2Trigger.innerHTML+' '+produk3Trigger.innerHTML);
+		tagSubmit.setAttribute('href','https://wa.me/6282297008375/?text=Hallo%20Akbar%20Angkasa saya '+' '+valueInputNama+' Alamat: '+valueInputAlamat+' No WhatsApp: '+valueInputWhatsApp+' pesan: '+produk1Trigger.innerHTML+' '+produk2Trigger.innerHTML+' '+produk3Trigger.innerHTML+' total belanja: '+totalHarga);
 	}
 });
 
