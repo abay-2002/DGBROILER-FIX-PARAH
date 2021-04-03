@@ -409,6 +409,14 @@
 }
 /*penutup*/
 /*pop up confirm*/
+.toggleBayar {
+	display: block;
+}
+
+.toggleBayarShow {
+	display: none;
+}
+
 #popUpConfirm {
 	background-color: rgba(0,0,0,.9);
 	position: fixed;

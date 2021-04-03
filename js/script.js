@@ -24,10 +24,6 @@ elhADivBayar.innerHTML = 'test';
 
 // TIDAK UNTUK DITIRU PENULISAN KODE INI KURANG RAPIH :)
 
-
-
-
-
 // quantityProduk1 
 let quantityProduk1 = 0;
 // hargaProduk1 
@@ -172,11 +168,17 @@ for(i=0; i<tombol.length; i++){
 	tagInputWhatsApp.setAttribute('type','text');
 	tagInputWhatsApp.setAttribute('required','text');
 
+	// formclose
+	let tagClose = document.createElement('a');
+	tagClose.innerHTML = 'x';
+
 	// form submit
 	let tagSubmit = document.createElement('a');
 	tagSubmit.innerHTML = 'Kirim';
-	
-let divPopUpConfirmWrapper = document.getElementById('popUpConfirmWrapper');
+
+	// formwrapper
+	let divPopUpConfirmWrapper = document.getElementById('popUpConfirmWrapper');
+
 elhADivBayar.addEventListener('click',function(){
 	let divPopUpConfirm = document.createElement('div');
 	divPopUpConfirm.setAttribute('id','popUpConfirm');
@@ -187,6 +189,7 @@ elhADivBayar.addEventListener('click',function(){
 	divPopUpConfirmWrapper.appendChild(divPopUpConfirm);
 	divPopUpConfirm.appendChild(divDialogPopUp);
 
+	divDialogPopUp.appendChild(tagClose);
 	tagForm.appendChild(tagNama);
 	tagForm.appendChild(tagInputNama);
 	tagForm.appendChild(tagAlamat);
@@ -195,18 +198,16 @@ elhADivBayar.addEventListener('click',function(){
 	tagForm.appendChild(tagInputWhatsApp);
 	tagForm.appendChild(tagSubmit);
 	divDialogPopUp.appendChild(tagForm);
+	
+	// untuk close
+	divPopUpConfirmWrapper.setAttribute('class','toggleBayar');
+
+	tagClose.addEventListener('click',function(){
+		divPopUpConfirmWrapper.setAttribute('class','toggleBayarShow');
+	});
 });
 
 // submit
-// let valueNamaFix = tagInputNama.value;
-// let valueAlamatFix = tagInputAlamat.value;
-// let valueWhatsAppFix = tagInputWhatsApp.value;
-
-// yang terjadi adalah ambil value dari tagInputNama dengan methode .value
-// tampung value di valueInputNama
-// apabila value text dari valueInputNama lengthnya sama dengan 0
-// maka lakukan alert('masukan nilai!')
-// else nilai masuk
 tagSubmit.addEventListener('click',function(){
 	let valueInputNama = tagInputNama.value;
 	let valueInputAlamat = tagInputAlamat.value;
@@ -218,6 +219,16 @@ tagSubmit.addEventListener('click',function(){
 		tagSubmit.setAttribute('href','https://wa.me/6282297008375/?text=Hallo%20Akbar%20Angkasa saya '+' '+valueInputNama+' Alamat: '+valueInputAlamat+' No WhatsApp: '+valueInputWhatsApp+' pesan: '+produk1Trigger.innerHTML+' '+produk2Trigger.innerHTML+' '+produk3Trigger.innerHTML+' total belanja: '+totalHarga);
 	}
 });
+// let valueNamaFix = tagInputNama.value;
+// let valueAlamatFix = tagInputAlamat.value;
+// let valueWhatsAppFix = tagInputWhatsApp.value;
+
+// yang terjadi adalah ambil value dari tagInputNama dengan methode .value
+// tampung value di valueInputNama
+// apabila value text dari valueInputNama lengthnya sama dengan 0
+// maka lakukan alert('masukan nilai!')
+// else nilai masuk
+
 
 
 // tagSubmit.addEventListener('click',function(){
