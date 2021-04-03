@@ -18,7 +18,7 @@ let elhDivBayar = document.createElement('div');
 elhDivBayar.setAttribute('id','bayar');
 let elhADivBayar = document.createElement('a');
 elhDivBayar.appendChild(elhADivBayar);
-elhADivBayar.innerHTML = 'test';
+elhADivBayar.innerHTML = 'Bayar';
 
 // totalHarga dan tombol trigger, ditulis dibawah supaya proses penambahan produk dilakukan terlebih dahulu lalu komputer baru akan membaca totalHarga dan tombol trigger karena bahkan sebelum tombol trigger diklik komputer sudah membaca sebuah event yaitu event yang diberikan dari produk1Trigger produk2Trigger dan produk3Trigger
 

@@ -333,7 +333,7 @@
 #dialogBoxWrapper .dialogBoxParentMuncul {
 	/*height: 100px;*/
 	padding: 10px;
-	background-color: salmon;
+	background-color: #e30505;
 	width: 40%;
 	position: fixed;
 	bottom: 0;
@@ -345,31 +345,34 @@
 #dialogBoxWrapper .dialogBoxParentMuncul #produk1TriggerWrapper {
 	/*width: 20px;*/
 	/*height: 20px;*/
-	background-color: yellow;
+	/*background-color: yellow;*/
 	margin: 5px auto;
 	display: flex;
 	flex-direction: row;
 	font-weight: bold;
+	color: rgba(255,255,255,1);
 }
 
 #dialogBoxWrapper .dialogBoxParentMuncul #produk2TriggerWrapper {
 	/*width: 20px;*/
 	/*height: 20px;*/
-	background-color: lightgreen;
+	/*background-color: lightgreen;*/
 	margin: 5px auto;
 	display: flex;
 	flex-direction: row;
 	font-weight: bold;
+	color: rgba(255,255,255,1);
 }
 
 #dialogBoxWrapper .dialogBoxParentMuncul #produk3TriggerWrapper {
 	/*width: 20px;*/
 	/*height: 20px;*/
-	background-color: lightblue;
+	/*background-color: lightblue;*/
 	margin: 5px auto;
 	display: flex;
 	flex-direction: row;
 	font-weight: bold;
+	color: rgba(255,255,255,1);
 }
 /*penutup .dialogBoxParentMuncul*/
 
@@ -381,7 +384,7 @@
 	padding: 15px;
 	position: fixed;
 	bottom: 0;
-	background-color: red;
+	background-color: #42d934; /*green*/
 	display: flex;
 	flex-direction: column;
 }
@@ -389,6 +392,7 @@
 #dialogBoxWrapper #totalWrapper p {
 	font-weight: bold;
 	margin: auto;
+	color: rgba(0,0,0,.8);
 }
 /*penutup totalwrapper*/
 
@@ -396,7 +400,7 @@
 #dialogBoxWrapper #bayar {
 	position: fixed;
 	bottom: 0;
-	background-color: green;
+	background-color: #42d934; /*green*/
 	height: 80px;
 	width: 30%;
 	left: 0;
@@ -405,7 +409,7 @@
 #dialogBoxWrapper #bayar a {
 	line-height: 80px;
 	font-weight: bold;
-	color: rgba(0,0,0,1);
+	color: rgba(0,0,0,.8);
 }
 /*penutup*/
 /*pop up confirm*/
