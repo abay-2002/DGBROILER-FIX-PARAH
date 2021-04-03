@@ -170,10 +170,13 @@ for(i=0; i<tombol.length; i++){
 
 	// formclose
 	let tagClose = document.createElement('a');
+	tagClose.setAttribute('title','close');
+	tagClose.setAttribute('id','tagclose');
 	tagClose.innerHTML = 'x';
 
 	// form submit
 	let tagSubmit = document.createElement('a');
+	tagSubmit.setAttribute('id','sentForm');
 	tagSubmit.innerHTML = 'Kirim';
 
 	// formwrapper
@@ -213,7 +216,7 @@ tagSubmit.addEventListener('click',function(){
 	let valueInputAlamat = tagInputAlamat.value;
 	let valueInputWhatsApp = tagInputWhatsApp.value;
 	if((valueInputNama.innerText = valueInputNama.length == 0)||(valueInputAlamat.innerText = valueInputAlamat.length == 0)||(valueInputWhatsApp.innerText = valueInputWhatsApp.length == 0)){
-		alert('masukan nilai!!');
+		alert('Silahkan isi form');
 	}else{
 		tagSubmit.setAttribute('target','blank');
 		tagSubmit.setAttribute('href','https://wa.me/6282297008375/?text=Hallo%20Akbar%20Angkasa saya '+' '+valueInputNama+' Alamat: '+valueInputAlamat+' No WhatsApp: '+valueInputWhatsApp+' pesan: '+produk1Trigger.innerHTML+' '+produk2Trigger.innerHTML+' '+produk3Trigger.innerHTML+' total belanja: '+totalHarga);

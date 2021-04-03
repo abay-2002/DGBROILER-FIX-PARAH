@@ -384,7 +384,7 @@
 	padding: 15px;
 	position: fixed;
 	bottom: 0;
-	background-color: #42d934; /*green*/
+	background-color: #e30505; /*iconic red*/
 	display: flex;
 	flex-direction: column;
 }
@@ -392,7 +392,7 @@
 #dialogBoxWrapper #totalWrapper p {
 	font-weight: bold;
 	margin: auto;
-	color: rgba(0,0,0,.8);
+	color: rgba(255,255,255,1);
 }
 /*penutup totalwrapper*/
 
@@ -400,7 +400,7 @@
 #dialogBoxWrapper #bayar {
 	position: fixed;
 	bottom: 0;
-	background-color: #42d934; /*green*/
+	background-color: #5cdb5c; /*green*/
 	height: 80px;
 	width: 30%;
 	left: 0;
@@ -437,13 +437,18 @@
 	margin: auto;
 	width: 70%;
 	height: 50%;
-	background-color: salmon;
+	background-color: rgba(255,255,255,1);
+	border-radius: 25px;
 }
 
-#popUpConfirm #dialogPopUp #closePopUp {
+#popUpConfirm #dialogPopUp #tagclose{
 	position: absolute;
-	left: 1%;
-	color: green;
+	top: -2.5%;
+	left: -2.5%;
+	color: rgba(255,255,255,1);
+	font-size: 18px;
+	font-weight: bold;
+	z-index: 9999;
 }
 
 #popUpConfirm #dialogPopUp form {
@@ -452,7 +457,14 @@
 	margin: auto;
 	position: relative;
 	top: 5%;
-	background-color: red;
+/*	background-color: red;
+*/}
+
+#popUpConfirm #dialogPopUp form #sentForm {
+	background-color: #04c237;
+	padding: 2px;
+	color: rgba(255,255,255,1);
+	border-radius: 2px;
 }
 
 /*penutup pop up confirm*/
