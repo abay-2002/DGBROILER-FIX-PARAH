@@ -13,12 +13,25 @@ let elhTotal = document.createElement('p');
 elhTotal.setAttribute('id','totalHarga');
 elhDivTotalWrapper.appendChild(elhTotal);
 
+
+
 // divIdBayar
 let elhDivBayar = document.createElement('div');
 elhDivBayar.setAttribute('id','bayar');
+// iconbayar
+let elhIconCart = document.createElement('img');
+elhIconCart.setAttribute('src','img/icon/cart.png');
+
+
+// tombolBayar
 let elhADivBayar = document.createElement('a');
+elhADivBayar.setAttribute('href','#');
+elhDivBayar.appendChild(elhIconCart);
 elhDivBayar.appendChild(elhADivBayar);
+
 elhADivBayar.innerHTML = 'Bayar';
+
+
 
 // totalHarga dan tombol trigger, ditulis dibawah supaya proses penambahan produk dilakukan terlebih dahulu lalu komputer baru akan membaca totalHarga dan tombol trigger karena bahkan sebelum tombol trigger diklik komputer sudah membaca sebuah event yaitu event yang diberikan dari produk1Trigger produk2Trigger dan produk3Trigger
 
@@ -170,12 +183,14 @@ for(i=0; i<tombol.length; i++){
 
 	// formclose
 	let tagClose = document.createElement('a');
+	tagClose.setAttribute('href','#');
 	tagClose.setAttribute('title','close');
 	tagClose.setAttribute('id','tagclose');
 	tagClose.innerHTML = 'x';
 
 	// form submit
 	let tagSubmit = document.createElement('a');
+	tagSubmit.setAttribute('href','#');
 	tagSubmit.setAttribute('id','sentForm');
 	tagSubmit.innerHTML = 'Kirim';
 

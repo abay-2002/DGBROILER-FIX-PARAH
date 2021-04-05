@@ -406,10 +406,16 @@
 	left: 0;
 	text-align: center;
 }
+#dialogBoxWrapper #bayar img {
+	margin-bottom: -4.5px;
+	margin-right: 5px;
+	width: 22px;
+}
+
 #dialogBoxWrapper #bayar a {
 	line-height: 80px;
 	font-weight: bold;
-	color: rgba(0,0,0,.8);
+	color: rgba(0,0,0,1);
 }
 /*penutup*/
 /*pop up confirm*/
