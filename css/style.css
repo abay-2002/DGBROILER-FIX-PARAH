@@ -13,7 +13,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgba(0,0,0,.05); 
+  background: rgba(0,0,0,0); 
 }
  
 /* Handle */
@@ -59,11 +59,21 @@
 }
 /*penutup slider main*/
 
+/*produk title*/
+#produkTitleWrapper #produkTitle {
+	text-align: center;
+	font-weight: bold;
+	font-size: 60px;
+	margin-top: 100px;
+}
+
+/*penutup produk title*/
 
 /*carousel pesan*/
 .carousel {
-	/*background-color: green;*/
-	margin: 100px auto;
+/*	background-color: green;
+*/	margin: auto;
+	margin-bottom: 100px;
 	/*width: 820px;*/
 }
 
@@ -381,17 +391,17 @@
 	width: 30%;
 	left: 30%;
 	height: 80px;
-	padding: 15px;
 	position: fixed;
 	bottom: 0;
 	background-color: #e30505; /*iconic red*/
 	display: flex;
 	flex-direction: column;
+	text-align: center;
 }
 
 #dialogBoxWrapper #totalWrapper p {
+	line-height: 80px;
 	font-weight: bold;
-	margin: auto;
 	color: rgba(255,255,255,1);
 }
 /*penutup totalwrapper*/
@@ -406,6 +416,7 @@
 	left: 0;
 	text-align: center;
 }
+
 #dialogBoxWrapper #bayar img {
 	margin-bottom: -4.5px;
 	margin-right: 5px;
