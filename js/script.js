@@ -141,6 +141,7 @@ let tombol = document.querySelectorAll('.tombol');
 for(i=0; i<tombol.length; i++){
 	tombol[i].addEventListener('click',function(){
 		if(totalHarga >= 0){
+			// let wrapper = document.getElementById('dialogBoxWrapper');
 			// dialogBox.classList.toggle('dialogBoxParentMuncul');
 			wrapper.appendChild(elhDivBoxParent);
 			totalHarga = hargaproduk1+hargaProduk2+hargaProduk3;
