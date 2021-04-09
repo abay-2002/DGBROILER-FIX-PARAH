@@ -114,25 +114,25 @@
 	background-color: #e30505 !important; /*iconic red*/
 }
 
-.carousel .carousel-item {
+.costumCarouselProduk .carousel-item {
 	width: 420px;
 	/*background-color: salmon;*/
 	margin-top: -100px !important;
 }
 
-.carousel .carousel-item img {
+.costumCarouselProduk .carousel-item img {
 	width: 420px;
 	margin: auto;
 	/*background-color: red;*/
 	position: relative;
 }
 
-.carousel .carousel-item a {
+.costumCarouselProduk .carousel-item a {
 	margin-top: -200px;
 	position: relative;
 }
 
-.carousel .carousel-item .tombolRemove {
+.costumCarouselProduk .carousel-item .tombolRemove {
 	position: relative;
 }
 
@@ -154,13 +154,13 @@
 		background-color: #e30505 !important; /*iconic red*/
 	}
 
-	.carousel .carousel-item {
+	.costumCarouselProduk .carousel-item {
 		width: 420px;
 		/*background-color: salmon;*/
 		margin-top: -100px !important;
 	}
 
-	.carousel .carousel-item img {
+	.costumCarouselProduk .carousel-item img {
 		width: 420px;
 		margin: auto;
 		/*background-color: red;*/
@@ -183,13 +183,13 @@
 		background-color: #e30505 !important; /*iconic red*/
 	}
 
-	.carousel .carousel-item {
+	.costumCarouselProduk .carousel-item {
 		width: 420px;
 		/*background-color: salmon;*/
 		margin-top: -100px !important;
 	}
 
-	.carousel .carousel-item img {
+	.costumCarouselProduk .carousel-item img {
 		width: 420px;
 		margin: auto;
 		/*background-color: red;*/
@@ -212,13 +212,13 @@
 		background-color: #e30505 !important; /*iconic red*/
 	}
 
-	.carousel .carousel-item {
+	.costumCarouselProduk .carousel-item {
 		width: 420px;
 		/*background-color: salmon;*/
 		margin-top: -100px !important;
 	}
 
-	.carousel .carousel-item img {
+	.costumCarouselProduk .carousel-item img {
 		width: 420px;
 		margin: auto;
 		/*background-color: red;*/
@@ -241,19 +241,19 @@
 		background-color: #e30505 !important; /*iconic red*/
 	}
 
-	.carousel .carousel-item {
+	.costumCarouselProduk .carousel-item {
 		width: 420px;
 		/*background-color: salmon;*/
 		margin-top: -100px !important;
 	}
 
-	.carousel .carousel-item img {
+	.costumCarouselProduk .carousel-item img {
 		width: 420px;
 		margin: auto;
 		/*background-color: red;*/
 	}
 	
-	.carousel .carousel-item a {
+	.costumCarouselProduk .carousel-item a {
 		margin-top: -200px;
 		margin-left: 20px;
 		position: relative;
@@ -276,19 +276,19 @@
 		background-color: #e30505 !important; /*iconic red*/
 	}
 
-	.carousel .carousel-item {
+	.costumCarouselProduk .carousel-item {
 		width: 420px;
 		/*background-color: salmon;*/
 		margin-top: -100px !important;
 	}
 
-	.carousel .carousel-item img {
+	.costumCarouselProduk .carousel-item img {
 		width: 420px;
 		margin: auto;
 		/*background-color: red;*/
 	}
 
-	.carousel .carousel-item a {
+	.costumCarouselProduk .carousel-item a {
 		margin-top: -200px;
 		margin-left: 50px;
 		position: relative;
@@ -311,19 +311,19 @@
 		background-color: #e30505 !important; /*iconic red*/
 	}
 
-	.carousel .carousel-item {
+	.costumCarouselProduk .carousel-item {
 		width: 300px;
 		/*background-color: salmon;*/
 		margin-top: -100px !important;
 	}
 
-	.carousel .carousel-item img {
+	.costumCarouselProduk .carousel-item img {
 		width: 300px;
 		margin: auto;
 		/*background-color: red;*/
 	}
 
-	.carousel .carousel-item a {
+	.costumCarouselProduk .carousel-item a {
 		margin-top: -200px;
 		margin-left: 20px;
 		position: relative;
@@ -346,19 +346,19 @@
 		background-color: #e30505 !important; /*iconic red*/
 	}
 
-	.carousel .carousel-item {
+	.costumCarouselProduk .carousel-item {
 		width: 300px;
 		/*background-color: salmon;*/
 		margin-top: -100px !important;
 	}
 
-	.carousel .carousel-item img {
+	.costumCarouselProduk .carousel-item img {
 		width: 300px;
 		margin: auto;
 		/*background-color: red;*/
 	}
 
-	.carousel .carousel-item a {
+	.costumCarouselProduk .carousel-item a {
 		margin-top: -200px;
 		margin-left: 30px;
 		position: relative;
