@@ -52,14 +52,21 @@
 /*sidenav*/
 .sidenav #sidenavLogo {
 	background-color: #e30505; /*iconicred*/
-	padding: 0;
-	border-bottom-right-radius: 20px;
+	padding: 10px;
 }
 
 .sidenav #sidenavLogo img {
 	margin-left: 30px;	
 }
+/*costum sideList*/
+.costumSideList {
+	margin: 14px;
+}
 
+.costumSideList a span{
+	font-size: 16px;
+}
+/*penutup costumSideList*/
 /*dropdown sidenav*/
 .costumDropDownSideNav li {
 	margin: 0px;
@@ -69,6 +76,10 @@
 	width: 14px;
 	margin-bottom: -2px;
 	margin-left: 40px;
+}
+
+.costumDropDownSideNav .costumSideListDropDown span {
+	font-size: 16px;
 }
 /*penutup dropdown sidenav*/
 
