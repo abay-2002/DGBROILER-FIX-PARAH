@@ -407,6 +407,7 @@
 	right: 0;
 	display: flex;
 	flex-direction: column;
+	z-index: 999;
 }
 
 #dialogBoxWrapper .dialogBoxParentMuncul #produk1TriggerWrapper {
@@ -418,6 +419,7 @@
 	flex-direction: row;
 	font-weight: bold;
 	color: rgba(255,255,255,1);
+	z-index: 999;
 }
 
 #dialogBoxWrapper .dialogBoxParentMuncul #produk2TriggerWrapper {
@@ -429,6 +431,7 @@
 	flex-direction: row;
 	font-weight: bold;
 	color: rgba(255,255,255,1);
+	z-index: 999;
 }
 
 #dialogBoxWrapper .dialogBoxParentMuncul #produk3TriggerWrapper {
@@ -440,6 +443,7 @@
 	flex-direction: row;
 	font-weight: bold;
 	color: rgba(255,255,255,1);
+	z-index: 999;
 }
 /*penutup .dialogBoxParentMuncul*/
 
@@ -447,18 +451,18 @@
 #dialogBoxWrapper #totalWrapper {
 	width: 30%;
 	left: 30%;
-	height: 70px;
 	position: fixed;
 	bottom: 0;
 	background-color: #e30505; /*iconic red*/
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	z-index: 999;
 }
 
 #dialogBoxWrapper #totalWrapper p {
-	line-height: 80px;
 	font-weight: bold;
+	padding: 25px;
 	color: rgba(255,255,255,1);
 }
 /*penutup totalwrapper*/
@@ -472,6 +476,7 @@
 	width: 30%;
 	left: 0;
 	text-align: center;
+	z-index: 999;
 }
 
 #dialogBoxWrapper #bayar img {
