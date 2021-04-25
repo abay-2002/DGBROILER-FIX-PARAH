@@ -62,6 +62,10 @@
 
 /*penutup sidenav*/
 /*slider main*/
+.costumSlide ul {
+	height: 100vh !important;
+}
+
 .slider .slidesSatu li .caption h3 {
 	margin-top: 18vh;
 	font-weight: bold;
