@@ -620,7 +620,7 @@ footer #wave-ft {
 	padding: 0;
 	background: url(../img/miscellaneous/wave.png);
 	background-repeat-y:no-repeat; 
-	animation: animasiFooter 5s linear infinite;
+	animation: animasiFooter 7s linear infinite;
 	animation-delay: 0s;
 	left: 0;
 	background-size: 700px 50px;
@@ -631,7 +631,7 @@ footer #wave-ft {
 		background-position-x:0; 
 	}
 	100%{
-		background-position-x:1000px; 
+		background-position-x:1400px; 
 	}
 }
 
@@ -647,10 +647,10 @@ footer #wave-ft {
 
 @media only screen and (max-width: 500px){
 	footer h3 {
-		font-size: 52px;
+		font-size: 62px;
 	}
 	footer h4 {
-		font-size: 12px;
+		font-size: 18px;
 	}
 	footer ul li a span {
 		display: none;
@@ -660,7 +660,7 @@ footer #wave-ft {
 
 @media only screen and (max-width: 300px){
 	footer h3 {
-		font-size: 42px;
+		font-size: 52px;
 	}
 	footer h4 {
 		font-size: 18px;
