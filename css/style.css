@@ -40,11 +40,6 @@
 }
 /*penutup mainnav*/
 /*dropdown mainnav*/
-#dropdown1 .app-bg {
-	margin-top: 100px;
-	background-color: green;
-}
-
 .costumSidenavParent {
 	border-top-right-radius: 15px !important;
 }
@@ -95,24 +90,32 @@
 	font-size: 60px;
 	margin-top: 100px;
 }
-
 /*penutup produk title*/
+
+/*carousel tentang kami*/
+/*.costumCarouselTentang {
+	width: 200px !important;
+}
+*/
+
+
+/*penutup carousel tentang kami*/
 
 /*carousel pesan*/
 .carousel {
-/*	background-color: green;
-*/	margin: auto;
+	/*background-color: green;*/
+	margin: auto;
 	margin-bottom: 100px;
 	/*width: 820px;*/
 }
 
-.carousel .indicators .indicator-item {
+/*.carousel .indicators .indicator-item {
 	background-color: #db7474;
 }
 
 .carousel .indicators .indicator-item.active {
-	background-color: #e30505 !important; /*iconic red*/
-}
+	background-color: #e30505 !important; 
+}*/
 
 .costumCarouselProduk .carousel-item {
 	width: 420px;
@@ -136,15 +139,15 @@
 	position: relative;
 }
 
-
 /*responsive carousel*/
 @media only screen and (max-width: 860px){
 	/*carousel pesan*/
 	.carousel {
 		/*background-color: green;*/
 		margin: 100px auto;
-		width: 600px;
+		width: 600px !important;
 	}
+	/*css diatas meliputi carousel pesan dan carousel tentang kami*/
 
 	.carousel .indicators .indicator-item {
 		background-color: #db7474;
@@ -172,7 +175,11 @@
 	.carousel {
 		/*background-color: green;*/
 		margin: 100px auto;
-		width: 500px;
+		width: 500px !important;
+	}
+
+	.costumCarouselTentang{
+		width: 450px !important;
 	}
 
 	.carousel .indicators .indicator-item {
@@ -201,7 +208,11 @@
 	.carousel {
 		/*background-color: green;*/
 		margin: 100px auto;
-		width: 450px;
+		width: 450px !important;
+	}
+
+	.costumCarouselTentang{
+		width: 400px !important;
 	}
 
 	.carousel .indicators .indicator-item {
@@ -230,7 +241,11 @@
 	.carousel {
 		/*background-color: green;*/
 		margin: 100px auto;
-		width: 400px;
+		width: 400px !important;
+	}
+
+	.costumCarouselTentang{
+		width: 350px !important;
 	}
 
 	.carousel .indicators .indicator-item {
@@ -265,7 +280,11 @@
 	.carousel {
 		/*background-color: green;*/
 		margin: 100px auto;
-		width: 350px;
+		width: 350px !important;
+	}
+
+	.costumCarouselTentang{
+		width: 300px !important;
 	}
 
 	.carousel .indicators .indicator-item {
@@ -300,7 +319,11 @@
 	.carousel {
 		/*background-color: green;*/
 		margin: 100px auto;
-		width: 300px;
+		width: 300px !important;
+	}
+
+	.costumCarouselTentang{
+		width: 250px !important;
 	}
 
 	.carousel .indicators .indicator-item {
@@ -335,7 +358,11 @@
 	.carousel {
 		/*background-color: green;*/
 		margin: 100px auto;
-		width: 250px;
+		width: 250px !important;
+	}
+
+	.costumCarouselTentang{
+		width: 200px !important;
 	}
 
 	.carousel .indicators .indicator-item {
@@ -365,6 +392,7 @@
 	}
 }
 /*penutup carousel pesan*/
+
 
 /*pesan*/
 /*dialogBox Carousel*/
@@ -419,7 +447,7 @@
 #dialogBoxWrapper #totalWrapper {
 	width: 30%;
 	left: 30%;
-	height: 80px;
+	height: 70px;
 	position: fixed;
 	bottom: 0;
 	background-color: #e30505; /*iconic red*/
@@ -440,7 +468,7 @@
 	position: fixed;
 	bottom: 0;
 	background-color: #5cdb5c; /*green*/
-	height: 80px;
+	height: 70px;
 	width: 30%;
 	left: 0;
 	text-align: center;
@@ -514,11 +542,117 @@
 }
 
 /*penutup pop up confirm*/
-
-
-
-
 /*penutup pesan*/
 /*penutup dialogBox carousel*/
 
+/*footer*/
+footer {
+	background-color: #e30505; /*iconic red*/
+	margin:0;
+/*	height: 50vh;
+*/	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 0;
+	background-image: url(../img/icon/chickenIcon-bg2.png);
+	background-image: filter
+}
+
+footer #footerChildWrapper {
+	margin: 50px auto;
+	width: 100%;
+	/*background-color: green;*/
+	position: relative;
+}
+
+footer h3 {
+	color: rgba(255,255,255,1);
+	text-align: center;
+	font-weight: bold;
+	font-size: 82px;
+	display: block;
+}
+
+footer h4 {
+	text-align: center;
+	color: rgba(255,255,255,1);
+	font-size: 32px;
+	font-weight: bold;
+	display: block;
+}
+
+footer ul {
+	margin-top: -50px;
+	/*background-color: salmon;*/
+	text-align: center;
+}
+
+footer ul li {
+	display: inline-block;
+	margin: 5px;
+}
+
+footer ul li a img {
+	/*margin-right: 10px !important;*/
+	display: inline-block;
+}
+
+footer ul li a span {
+	color: rgba(255,255,255,1);
+	display: inline-block;
+}
+
+footer .footerIcon{
+	width: 12px;
+	text-align: center;
+	margin-right: 2px;
+}
+
+footer #wave-ft {
+	margin: 0;
+	width: 100%;
+	height: 100px;
+	margin-top: 100px;
+	padding: 0;
+	background: url(../img/miscellaneous/wave.png);
+	background-repeat-y:no-repeat; 
+	animation: animasiFooter 5s linear infinite;
+	animation-delay: 0s;
+	left: 0;
+	background-size: 500px 100px;
+}
+
+@keyframes animasiFooter {
+	0% {
+		background-position-x:0; 
+	}
+	100%{
+		background-position-x:1000px; 
+	}
+}
+
+/*.wavy {
+	width: 100%;
+	height: 100px;
+	bottom: -5px;
+	left: 0;
+	background: url(../img/wave.png);
+	position: absolute;
+	background-size: 500px 100px;
+}
+
+section .wavy{
+	animation: waveboy 5s linear infinite;
+	animation-delay: 0s;
+}
+
+@keyframes waveboy {
+	0%{
+		background-position-x:0;
+	}
+	100%{
+		background-position-x:1000px;
+	}
+}*/
+
+/*penutup footer*/
 
