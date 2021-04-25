@@ -615,7 +615,7 @@ footer .footerIcon{
 footer #wave-ft {
 	margin: 0;
 	width: 100%;
-	height: 100px;
+	height: 50px;
 	margin-top: 100px;
 	padding: 0;
 	background: url(../img/miscellaneous/wave.png);
@@ -623,7 +623,7 @@ footer #wave-ft {
 	animation: animasiFooter 5s linear infinite;
 	animation-delay: 0s;
 	left: 0;
-	background-size: 500px 100px;
+	background-size: 700px 50px;
 }
 
 @keyframes animasiFooter {
@@ -635,6 +635,41 @@ footer #wave-ft {
 	}
 }
 
+@media only screen and (max-width: 565px){
+	footer h3 {
+		font-size: 72px;
+	}
+	footer h4 {
+		font-size: 22px;
+	}
+
+}
+
+@media only screen and (max-width: 500px){
+	footer h3 {
+		font-size: 52px;
+	}
+	footer h4 {
+		font-size: 12px;
+	}
+	footer ul li a span {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 300px){
+	footer h3 {
+		font-size: 42px;
+	}
+	footer h4 {
+		font-size: 18px;
+	}
+	footer ul li a span {
+		display: none;
+	}
+
+}
 /*.wavy {
 	width: 100%;
 	height: 100px;
