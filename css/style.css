@@ -60,6 +60,18 @@
 	margin-left: 30px;	
 }
 
+/*dropdown sidenav*/
+.costumDropDownSideNav li {
+	margin: 0px;
+}
+
+.costumDropDownSideNav li a img {
+	width: 14px;
+	margin-bottom: -2px;
+	margin-left: 40px;
+}
+/*penutup dropdown sidenav*/
+
 /*penutup sidenav*/
 /*slider main*/
 .costumSlide ul {
