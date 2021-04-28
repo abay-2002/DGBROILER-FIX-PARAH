@@ -583,8 +583,8 @@ footer {
 	margin:0;
 /*	height: 50vh;
 */	width: 100%;
-	padding-top: 25px;
-	padding-bottom: 0;
+	padding-top: 20px;
+	padding-bottom: 50px;
 	background-image: url(../img/icon/chickenIcon-bg2.png);
 	background-image: filter
 }
@@ -614,7 +614,6 @@ footer h4 {
 
 footer ul {
 	margin-top: -50px;
-	/*background-color: salmon;*/
 	text-align: center;
 }
 
@@ -639,7 +638,7 @@ footer .footerIcon{
 	margin-right: 2px;
 }
 
-footer #wave-ft {
+/*footer #wave-ft {
 	margin: 0;
 	width: 100%;
 	height: 50px;
@@ -660,7 +659,7 @@ footer #wave-ft {
 	100%{
 		background-position-x:1400px; 
 	}
-}
+}*/
 
 @media only screen and (max-width: 565px){
 	footer h3 {
